@@ -117,6 +117,15 @@ body {
     font-weight: 600;
 }
 
+.card .card-body ul li .group-icon{
+    display: flex;
+    flex-direction: row;
+}
+
+.card .card-body ul li .group-icon p{
+    padding-left: 5px;
+}
+
 .card .card-body ul li .number {
     color: var(--dark-gray-blue);
     font-weight: 700;
