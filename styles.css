@@ -1,0 +1,212 @@
+:root {
+
+    /* Primary */
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Gradients */
+    --light-slate-blue-background: hsl(252, 100%, 67%);
+    --light-royal-blue-background: hsl(241, 81%, 54%);
+
+    --violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-style: normal;
+    color: var(--white);
+}
+
+.container {}
+
+.card {
+    margin: 0;
+}
+
+/* CARD HEADER */
+
+.card .card-header {
+    background: linear-gradient( var(--light-slate-blue-background) -20%, var(--light-royal-blue-background) 70%);
+    text-align: center;
+    padding: 25px 25px;
+    border-radius: 0 0 35px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .card-header h3 {
+    margin-top: 0;
+    color: var(--light-lavender);
+}
+
+.card .card-header .group-number {
+    background: linear-gradient(var(--violet-blue-circle) 10%, var(--light-royal-blue-background) 100%);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card .card-header .group-number ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card .card-header .group-number ul .first-number {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.card .card-header .group-number ul .second-number {
+    color: var(--light-lavender);
+    font-weight: 500;
+}
+
+.card .card-header h2 {
+    margin-bottom: 0px;
+}
+
+.card .card-header p {
+    margin-top: 3px;
+    color: var(--light-lavender);
+    font-weight: 500;
+}
+
+/* CARD BODY */
+
+.card .card-body {
+    padding: 5px 30px;
+}
+
+.card .card-body h3 {
+    color: var(--dark-gray-blue);
+}
+
+.card .card-body ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.card .card-body ul li {
+    /* border: 1px solid red; */
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 10px;
+}
+
+.card .card-body ul li .title{
+    font-weight: 600;
+}
+
+.card .card-body ul li .number {
+    color: var(--dark-gray-blue);
+    font-weight: 700;
+}
+
+.card .card-body ul li .number span {
+    color: rgb(143, 142, 142);
+}
+
+.card .card-body ul .reaction {
+    background-color: #ffe6e6;
+    color: #ff5a5a;
+}
+
+.card .card-body ul .memory {
+    background-color: #fff5cc;
+    color: var(--orangey-yellow);
+}
+
+.card .card-body ul .verbal {
+    background-color: #e6f7f5;
+    color: var(--green-teal);
+}
+
+.card .card-body ul .visual {
+    background-color: #e6e9ff;
+    color: var(--cobalt-blue);
+}
+
+.card .card-body button{
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    background-color: var(--dark-gray-blue);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
+}
+
+.card .card-body button:hover{
+    background: linear-gradient(to right,var(--light-slate-blue-background) -20%, var(--light-royal-blue-background) 70%);
+}
+
+@media only screen and (min-width: 600px) {
+    .container {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 100px;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: row;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 25px;
+    }
+
+    .card .card-header {
+        border-radius: 25px;
+        width: 400px;
+    }
+    .card .card-header .group-number {
+        
+        width: 220px;
+        height: 220px;
+    }
+    .card .card-header .group-number ul .first-number {
+        font-size: 4rem;
+    }
+    .card .card-header h2 {
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+
+    .card .card-header p {
+        font-size: 1rem;
+        width: 200px;
+        margin: 0;
+    }
+
+    .card .card-body{
+        width: 400px;
+    }
+    .card .card-body button{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+}
